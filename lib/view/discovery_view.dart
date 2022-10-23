@@ -139,9 +139,7 @@ class _DiscoveryViewState extends State<DiscoveryView> {
               fontWeight: FontWeight.bold,
             ),
           ),
-          SizedBox(
-            height: 12.0,
-          ),
+          const SizedBox(height: 12.0),
           Expanded(
             child: ListView(
               scrollDirection: Axis.horizontal,
@@ -149,12 +147,15 @@ class _DiscoveryViewState extends State<DiscoveryView> {
                   .map((url) => Container(
                         height: 100,
                         width: 100,
-                        padding: EdgeInsets.only(right: 5),
-                        child: Image.network(url, fit: BoxFit.cover),
+                        padding: const EdgeInsets.only(right: 5),
+                        child: Image.network(
+                          url,
+                          fit: BoxFit.cover,
+                        ),
                       ))
                   .toList(),
             ),
-          )
+          ),
         ],
       ),
     );

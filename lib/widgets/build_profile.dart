@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:social_app_ui/model/user_model.dart';
+import '../model/user_model.dart';
 
 class BuildProfile extends StatefulWidget {
   final UserModel user;
@@ -81,7 +81,7 @@ class _BuildProfileState extends State<BuildProfile> {
           color: Colors.tealAccent,width: 2.5,
         ),
       ),
-      child: Center(
+      child: const Center(
         child: FittedBox(
           child: Text(
             'Follow',
